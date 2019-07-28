@@ -445,7 +445,7 @@ function blackView() {
 function som() {
   AUDIO = document.createElement("audio");
   AUDIO.setAttribute("src", "assets/som.mp3");
-  AUDIO.volume = 0;
+  // AUDIO.volume = 0;
   AUDIO.addEventListener("timeupdate", function() {
     // console.log(parseInt(AUDIO.currentTime)*1000);
     // console.log(UNIDADE);
