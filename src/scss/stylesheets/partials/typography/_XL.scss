@@ -1,0 +1,24 @@
+h1 {
+	font-size: 4.5em;
+}
+h2 {
+	font-size: 2.5em;
+}
+h3 {
+	font-size: 2em;
+}
+h4 {
+
+}
+h5 {
+
+}
+p {
+	font-size: 1.25em;
+	&.size-1 {
+		font-size: 1em;
+	}
+	&.size-2 {
+		font-size: 0.75em;
+	}
+}

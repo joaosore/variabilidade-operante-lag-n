@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- <link rel="shortcut icon" href="assets/favicon.png"> -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<title></title>
+		<link rel="shortcut icon" href="" type="image/png">
+	</head>
+	<body>
+
+		<section class="dados">
+			<form>
+
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<label for="participante">Participante</label>
+								<input type="text" class="form-control" id="participante" value="">
+							</div>
+							<div class="form-group">
+								<label for="">Tipo de Sequência</label>
+								<select name="seq" class="form-control sequencia_seq">
+									<option value="ASC" selected>Crescente</option>
+									<option value="DESC">Decrescente</option>
+								</select>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="leg_0" value="false">
+								<label class="form-check-label" for="leg_0">Leg 0</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="leg_2" value="false">
+								<label class="form-check-label" for="leg_2">Leg 2</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="leg_5" value="false">
+								<label class="form-check-label" for="leg_5">Leg 5</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="leg_8" value="false">
+								<label class="form-check-label" for="leg_8">Leg 8</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="ac" value="false">
+								<label class="form-check-label" for="ac">AC</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col leg_0">
+							<span>LEG 0</span>
+							<div class="form-group">
+								<label for="sequencia_0">Sequencia</label>
+								<input type="number" class="form-control" id="sequencia_0" name="sequencia_0" value="4">
+							</div>
+							<div class="form-group">
+								<label for="duracao_0">Duração</label>
+								<input type="number" class="form-control" id="duracao_0" name="duracao_0" value="20000">
+							</div>
+							<div class="form-group">
+								<label for="intervalo_0">Intervalo</label>
+								<input type="number" class="form-control" id="intervalo_0" name="intervalo_0" value="1000">
+							</div>
+							<div class="form-group">
+								<label for="tentativas_0">Tentativas</label>
+								<input type="number" class="form-control" id="tentativas_0" name="tentativas_0" value="2">
+							</div>
+						</div>
+						<div class="col leg_2">
+							<span>LEG 2</span>
+							<div class="form-group">
+								<label for="sequencia_2">Sequencia</label>
+								<input type="number" class="form-control" id="sequencia_2" name="sequencia_2" value="4">
+							</div>
+							<div class="form-group">
+								<label for="duracao_2">Duração</label>
+								<input type="number" class="form-control" id="duracao_2" name="duracao_2" value="20000">
+							</div>
+							<div class="form-group">
+								<label for="intervalo_2">Intervalo</label>
+								<input type="number" class="form-control" id="intervalo_2" name="intervalo_2" value="1000">
+							</div>
+							<div class="form-group">
+								<label for="tentativas_2">Tentativas</label>
+								<input type="number" class="form-control" id="tentativas_2" name="tentativas_2" value="2">
+							</div>
+						</div>
+						<div class="col leg_5">
+							<span>LEG 5</span>
+							<div class="form-group">
+								<label for="sequencia_5">Sequencia</label>
+								<input type="number" class="form-control" id="sequencia_5" name="sequencia_5" value="4">
+							</div>
+							<div class="form-group">
+								<label for="duracao_5">Duração</label>
+								<input type="number" class="form-control" id="duracao_5" name="duracao_5" value="20000">
+							</div>
+							<div class="form-group">
+								<label for="intervalo_5">Intervalo</label>
+								<input type="number" class="form-control" id="intervalo_5" name="intervalo_5" value="1000">
+							</div>
+							<div class="form-group">
+								<label for="tentativas_5">Tentativas</label>
+								<input type="number" class="form-control" id="tentativas_5" name="tentativas_5" value="2">
+							</div>
+						</div>
+						<div class="col leg_8">
+							<span>LEG 8</span>
+							<div class="form-group">
+								<label for="sequencia_8">Sequencia</label>
+								<input type="number" class="form-control" id="sequencia_8" name="sequencia_8" value="4">
+							</div>
+							<div class="form-group">
+								<label for="duracao_8">Duração</label>
+								<input type="number" class="form-control" id="duracao_8" name="duracao_8" value="20000">
+							</div>
+							<div class="form-group">
+								<label for="intervalo_8">Intervalo</label>
+								<input type="number" class="form-control" id="intervalo_8" name="intervalo_8" value="1000">
+							</div>
+							<div class="form-group">
+								<label for="tentativas_8">Tentativas</label>
+								<input type="number" class="form-control" id="tentativas_8" name="tentativas_8" value="2">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<button type="submit" class="btn btn-primary btn-lg btn-block gerar-link">Gerar Link</button>
+			</form>
+
+			<div class="link"></div>
+
+			<a href="?download=true">Relatório</a>
+		</section>
+
+		<section class="inicial">
+			<p style="max-width: 800px">
+				De tempos em tempos você ouvirá um som agudo. Você poderá utilizar o mouse a sua frente para clicar nos quadrados nos cantos superiores na tela e tentar desligá-lo.
+			</p>
+			<p>
+				Para iniciar, clique no botão abaixo [INICIAR].
+			</p>
+			<p>
+				Quando terminar, chame o experimentador.
+			</p>
+			<button class="iniciar">
+				Iniciar
+			</button>
+		</section>
+
+		<section class="download">
+
+			<div class="selects">
+				<select class="select_participantes">
+
+				</select>
+				<select class="select_tab">
+					<option>leg_0</option>
+					<option>leg_2</option>
+					<option>leg_5</option>
+					<option>leg_8</option>
+					<option>AC</option>
+				</select>
+
+				<button class="get_dados">Gerar dados</button>
+			</div>
+
+			<a href="#" class="export">Export Table data into Excel</a>
+			<div id="dvData">
+				<table id="leg_table">
+					
+				</table>
+			</div>
+		</section>
+
+		<section id="Teste" class="teste">
+			<div class="canvas"></div>
+
+			<div class="status">
+			</div>
+
+			</div>
+
+		</section>
+
+		<div class="black-view"></div>
+		<div class="grey-view">
+			<div class="box-btn">
+				<button class="next">Continuar</button>
+			</div>
+		</div>
+
+	</body>
+</html>

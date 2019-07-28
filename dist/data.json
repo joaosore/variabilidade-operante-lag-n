@@ -1,0 +1,112 @@
+{
+	"concessionaria": "Caraiga Audi",
+	"lojas": [
+		{
+			"nome": "Audi Center Jardins",
+			"endereco" : [
+				{
+					"texto": "Rua Colômbia, 659 - Jardim América - São Paulo - SP",
+					"link": "https://goo.gl/maps/MqHyctMu67D2"
+				}
+			],
+			"telefones": [
+				{
+					"numero": "1146804689"
+				}
+			],
+			"whatsapp": [],
+			"recebedores": [
+				{
+					"email": "joao.marcos@criah.com.br"
+				},
+				{
+					"email": "marketing@caraiga.com.br"
+				},
+				{
+					"email": "camila.freitas@criah.com.br"
+				},
+				{
+					"email": "amanda@criah.com.br"
+				},
+				{
+					"email": "douglas.vieira@caraiga.com.br"
+				},
+				{
+					"email": ""
+				},
+				{
+					"email": ""
+				},
+				{
+					"email": ""
+				},
+				{
+					"email": ""
+				},
+				{
+					"email": ""
+				}
+			]
+		},
+		{
+			"nome": "Audi Center Morumbi",
+			"endereco" : [
+				{
+					"texto": "Avenida Duquesa de Goiás, 800 - Real Parque - São Paulo - SP",
+					"link": "https://goo.gl/maps/zGRmZZ5o64n"
+				}
+			],
+			"telefones": [
+				{
+					"numero": "1146804687"
+				}
+			],
+			"whatsapp": [],
+			"recebedores": [
+				{
+					"email": "joao.marcos@criah.com.br"
+				},
+				{
+					"email": "marketing@caraiga.com.br"
+				},
+				{
+					"email": "camila.freitas@criah.com.br"
+				},
+				{
+					"email": "amanda@criah.com.br"
+				},
+				{
+					"email": "douglas.vieira@caraiga.com.br"
+				},
+				{
+					"email": ""
+				},
+				{
+					"email": ""
+				},
+				{
+					"email": ""
+				},
+				{
+					"email": ""
+				},
+				{
+					"email": ""
+				}
+			]
+		}
+	],
+	"configuracoes": {
+		"setFrom": "campanhas-criah@caraiga.com.br",
+		"titulo": "Caraigá",
+		"Subject": "Campanha - 001",
+		"favicon": "favicon.png",
+		"logoSite": "logo-a.png",
+		"logoEmail": "logo-email.jpg",
+		"alt": ""
+	},
+	"pixelFB": {
+		"pageview": "",
+		"btnclick": ""
+	}
+}
