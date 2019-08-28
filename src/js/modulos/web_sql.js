@@ -204,8 +204,8 @@ $(document).on("click", ".get_dados", function(e) {
 });
 
 function create_table(line) {
-  var combinacoes = JSON.parse(line.combinacoes);
-  var tempo = JSON.parse(line.tempo);
+  var tempo = checkEndTime(JSON.parse(line.tempo));
+  var combinacoes = checkEndBolean(JSON.parse(line.combinacoes));
 
   var nomeLeg = $(".select_tab option:selected").text();
   var stringLeg = "";
@@ -231,6 +231,7 @@ function create_table(line) {
   var indexArr = 0;
   var item = "";
   var indexNum = 1;
+
   combinacoes.forEach(function(currentValue, index) {
     var indexCombinacao = index;
     currentValue.forEach(function(currentValue, index) {
@@ -288,6 +289,66 @@ function create_table(line) {
   tb += "</tr>";
   tb += item;
   $("#leg_table").html(tb);
+}
+
+var INDEX_TIME = [];
+var EL_INDEX = [];
+function checkEndTime(arr) {
+  var new_arr = [];
+
+  console.log(arr);
+
+  var item_index = 0;
+  arr.forEach(function(currentValue, index) {
+    var length = currentValue.length;
+    var last = currentValue.length - 1;
+    var penultimate = currentValue.length - 2;
+
+    item_index = item_index + length;
+
+    if (length > 1) {
+      if (currentValue[last] === 20 && currentValue[penultimate] === 20) {
+        currentValue.pop();
+        new_arr.push(currentValue);
+        INDEX_TIME.push(index);
+        EL_INDEX.push(item_index - 1);
+      } else {
+        new_arr.push(currentValue);
+      }
+    } else {
+      new_arr.push(currentValue);
+    }
+  });
+  return new_arr;
+}
+
+function checkEndBolean(arr) {
+  var new_arr = [];
+
+  console.log(arr);
+
+  arr.forEach(function(currentValue, index) {
+    if (jQuery.inArray(index, INDEX_TIME) !== -1) {
+      currentValue.pop();
+      new_arr.push(currentValue);
+    } else {
+      new_arr.push(currentValue);
+    }
+  });
+
+  return new_arr;
+}
+
+function checkEndLeg(arr) {
+  var new_arr = [];
+
+  console.log(arr);
+
+  // EL_INDEX.forEach(function(currentValue, index) {
+  //   delete arr[currentValue];
+  // });
+
+  return arr;
 }
 
 export function getID() {
